@@ -1,37 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CarParts Delivery - Register</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+	<title>Create Account</title>
+</head>	
+<link rel="stylesheet" type="text/css" href="{styles.css}">
 <body>
-    <div class="container">
-        <h2 class="form-title">Register</h2>
-        <form class="register-form">
-            <div class="main-user-info">
-                <div class="user-input-box">
-                    <label for="fullname">Full Name</label>
-                    <input type="text" id="fullname" placeholder="Enter your full name" required>
-                </div>
-                <div class="user-input-box">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Enter your email" required>
-                </div>
-                <div class="user-input-box">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password" required>
-                </div>
-                <div class="user-input-box">
-                    <label for="confirm-password">Confirm Password</label>
-                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
-                </div>
-            </div>
-            <div class="form-submit-btn">
-                <input type="submit" value="Register">
-            </div>
-        </form>
-    </div>
+	<div class="Big">
+		<div class="BigLeft">
+			<div class="MiniLeft">
+				<h1>Create Account</h1><br>
+				<form method="post" action="cre">
+
+					<input type="text" placeholder="First Name" name="First_name" class="textbox">
+					<input type="text" placeholder="Last Name" name="Last_name" class="textbox"><br><br>
+					<input type="text" placeholder="Email" name="Email" class="textbox">
+					<input type="text" placeholder="Phone No" name="Phone_no" class="textbox"><br><br>
+					<input type="text" placeholder="User name" name="User_name" class="textbox2"><br><br>
+					<input type="text" placeholder="Password" name="Pwd" class="textbox2"><br><br>
+					<input type="text" placeholder="Confirm Password" name="Cpwd" class="textbox2"><br><br>
+					<input type="submit" value="SIGN UP" class="signup">
+				</form>
+			</div>
+		</div>
+		<div class="BigRight">
+			<div class="MiniRight">
+				<p>Already a member?&ensp;&ensp;<a href="loginpage"><button class="login">LOGIN</button></a>&ensp;&ensp;<a href="administrator"><button class="login">ADMIN</button></a></p><br>
+				<img src="RED.png" alt="Quikparts Logo" class="logo"><br><br>
+                <p>Quikparts Automotive is your trusted partner for spare parts delivery and on-site mechanic services. We are dedicated to simplifying the process of managing vehicle repairs and spare parts procurement for both businesses and individuals.</p><br><br>
+			</div>
+		</div>
+	</div>
 </body>
 </html>
