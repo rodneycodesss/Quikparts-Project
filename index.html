@@ -7,34 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>Quikparts Automotive</h1>
-            <p>Your one-stop solution for managing orders efficiently</p>
-        </div>
-    </header>
-
     <nav class="navbar">
         <div class="container">
+            <!-- Logo Section -->
+            <a href="index.html" class="logo">
+                <img src="RED.png" alt="Quikparts Logo" />
+            </a>
+            <!-- Navigation Links -->
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#login" class="active">Login</a></li>
+                <li><a href="#mechanic">Call a Mechanic</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </div>
     </nav>
 
+    <header class="header">
+        <div class="container">
+            <h1>Quikparts Automotive</h1>
+            <p>Your one-stop solution for spare parts delivery and on-site mechanic services</p>
+        </div>
+    </header>
+
     <main class="container">
         <section id="home" class="home">
-            <h2>Welcome to CarParts Delivery</h2>
-            <p>We provide a seamless platform for managing and tracking your orders. Whether you're an admin or a customer, we've got you covered.</p>
+            <h2>Welcome to Quikparts Automotive</h2>
+            <p>We provide a seamless platform for ordering spare parts and requesting on-site mechanic services. Whether you're an admin or a customer, we've got you covered.</p>
         </section>
 
         <section id="about" class="about">
             <h2>About Us</h2>
-            <p>CarParts Delivery is dedicated to simplifying the order management process for businesses and customers alike. With our platform, you can manage orders, track deliveries, and ensure customer satisfaction.</p>
+            <p>Quikparts Automotive is dedicated to simplifying the process of managing spare parts and vehicle repairs. With our platform, you can order parts, track deliveries, and request professional mechanics to your location.</p>
         </section>
 
         <section id="services" class="services">
@@ -44,13 +50,24 @@
                 <li>Real-time Order Tracking for Customers</li>
                 <li>Seamless Invoice Generation</li>
                 <li>Efficient Delivery Updates</li>
+                <li>On-site Mechanic Services</li>
             </ul>
+        </section>
+
+        <section id="mechanic" class="mechanic">
+            <h2>Call a Mechanic</h2>
+            <p>Need immediate assistance? Request a professional mechanic to your location in just a few clicks.</p>
+            <form>
+                <input type="text" id="location" placeholder="Enter your location" required>
+                <input type="text" id="vehicle" placeholder="Enter your vehicle details" required>
+                <button type="button" onclick="requestMechanic()">Request Mechanic</button>
+            </form>
         </section>
 
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
             <p>Have questions or need support? Reach out to us at:</p>
-            <p>Email: support@carpartsdelivery.com</p>
+            <p>Email: support@quikparts.com</p>
             <p>Phone: +254 700 123 456</p>
         </section>
 
@@ -68,10 +85,8 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 CarParts Delivery. All rights reserved.</p>
+            <p>&copy; 2025 Quikparts Automotive. All rights reserved.</p>
         </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
