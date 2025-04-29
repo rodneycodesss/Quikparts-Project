@@ -291,7 +291,6 @@ Footer {
       color: #100202;
       background: #573b8a;
       font-size: 1em;
-      font-color: #170202;
       font-weight: bold;
       margin-top: 30px;
       outline: none;
@@ -568,7 +567,6 @@ body {
 
 .about-container p {
     font-size: 1.1em;
-    font-color: white;
     line-height: 1.6;
 }
 
@@ -588,7 +586,6 @@ body {
 
 .services-container li {
     font-size: 1.1em;
-    font-color: white;
     margin: 10px 0;
     position: relative;
     padding-left: 20px;
@@ -695,5 +692,135 @@ main ul li {
 
     #about p {
         font-size: 1rem;
+    }
+}
+.call-mechanic /* General Reset */
+* {
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: black;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Mechanic Form Section */
+.mechanic-form {
+    background: black;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mechanic-form h2 {
+    color: red;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.mechanic-form p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: black;
+}
+
+.mechanic-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: red;
+}
+
+.mechanic-form input,
+.mechanic-form textarea {
+    width: 100%; /* Same width for all input boxes */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: black;
+    color: #333;
+}
+
+.mechanic-form input:focus,
+.mechanic-form textarea:focus {
+    border-color: #004aad;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 74, 173, 0.3);
+}
+
+.mechanic-form textarea {
+    resize: none;
+}
+
+.mechanic-form button {
+    width: 100%;
+    padding: 10px;
+    background: #004aad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.mechanic-form button:hover {
+    background: #003580;
+}
+
+/* Mechanic Info Section */
+.mechanic-info {
+    background: #004aad;
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mechanic-info h2 {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.mechanic-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mechanic-info ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.mechanic-info ul li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #ffcc00;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .mechanic-form h2,
+    .mechanic-info h2 {
+        font-size: 1.5rem;
     }
 }
