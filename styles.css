@@ -232,11 +232,12 @@ Footer {
 
 .login-form {
     display: flex;
+    align-content: right;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     min-height: 100vh;
     font-family: 'Jost', sans-serif;
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
@@ -269,14 +270,14 @@ Footer {
       transition: .5s ease-in-out;
     }
     input{
-      width: 60%;
+      width: 100px;
       height: 10px;
       background: #f2f2fb;
       justify-content: center;
       display: flex;
       color: #0f16da;
-      margin: 20px auto;
-      padding: 12px;
+      margin: 20px;
+      padding: 10px;
       border: none;
       outline: none;
       border-radius: 5px;
@@ -612,7 +613,7 @@ body {
 body {
     line-height: 1.6;
     font-size: 16px;
-    color: #333;
+    color: white;
     background-color: black;
 }
 
@@ -635,7 +636,7 @@ main h1, main h2 {
 main p {
     margin-bottom: 1rem;
     line-height: 1.8;
-    color: #555;
+    color: white;
 }
 
 main ul {
@@ -646,7 +647,7 @@ main ul {
 
 main ul li {
     margin-bottom: 0.5rem;
-    color: #333;
+    color: white;
 }
 
 /* Section Styling */
