@@ -34,17 +34,22 @@
     </header>
 
     <main class="container">
-        <section id="home" class="home">
-            <h2>Welcome to Quikparts Automotive</h2>
-            <p>We provide a seamless platform for ordering spare parts and requesting on-site mechanic services. Whether you're an admin or a customer, we've got you covered.</p>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-container">
+            <h1>Welcome to Quikparts Automotive</h1>
+            <p>Your one-stop solution for spare parts delivery and on-site mechanic services.</p>
+            <button onclick="window.location.href='service.html'">Explore Our Services</button>
         </section>
 
-        <section id="about" class="about">
+        <!-- About Section -->
+        <section id="about" class="about-container">
             <h2>About Us</h2>
-            <p>Quikparts Automotive is dedicated to simplifying the process of managing spare parts and vehicle repairs. With our platform, you can order parts, track deliveries, and request professional mechanics to your location.</p>
+            <p>At Quikparts Automotive, we are committed to simplifying the process of managing spare parts and vehicle repairs. Whether you're an admin managing inventory or a customer in need of quick repairs, we've got you covered.</p>
+            <img src="" alt="About Us">
         </section>
 
-        <section id="services" class="services">
+        <!-- Services Section -->
+        <section id="services" class="services-container">
             <h2>Our Services</h2>
             <ul>
                 <li>Order Management for Admins</li>
@@ -55,7 +60,8 @@
             </ul>
         </section>
 
-        <section id="mechanic" class="mechanic">
+        <!-- Call a Mechanic Section -->
+        <section id="mechanic" class="mechanic-container">
             <h2>Call a Mechanic</h2>
             <p>Need immediate assistance? Request a professional mechanic to your location in just a few clicks.</p>
             <form>
@@ -65,7 +71,8 @@
             </form>
         </section>
 
-        <section id="contact" class="contact">
+        <!-- Contact Section -->
+        <section id="contact" class="contact-container">
             <h2>Contact Us</h2>
             <p>Have questions or need support? Reach out to us at:</p>
             <p>Email: support@quikparts.com</p>
@@ -74,9 +81,45 @@
     </main>
 
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Quikparts Automotive. All rights reserved.</p>
+    <div class="container footer-content">
+        <!-- Address Section -->
+        <div class="footer-section address">
+            <h3>Address</h3>
+            <p>Location: Quikparts Automotive,Broadwalk Mall,Store S23,Ojijo Rd, Nairobi, Kenya</p>
+            <p>Call: +254 700 123 456</p>
+            <p>Email: <a href="mailto:support@quikparts.com">support@quikparts.com</a></p>
         </div>
-    </footer>
+
+        <!-- Info Section -->
+        <div class="footer-section info">
+            <h3>Info</h3>
+            <p>We provide the best automotive solutions, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentences.</p>
+        </div>
+
+        <!-- Links Section -->
+        <div class="footer-section links">
+            <h3>Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Subscribe Section -->
+        <div class="footer-section subscribe">
+            <h3>Subscribe</h3>
+            <p>Enter your email to stay updated:</p>
+            <form>
+                <input type="email" placeholder="Enter email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Quikparts Automotive. All rights reserved.</p>
+    </div>
+</footer>
 </body>
 </html>
