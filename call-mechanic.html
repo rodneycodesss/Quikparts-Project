@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Call a Mechanic - Quikparts Automotive</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- Logo Section -->
+            <a href="index.html" class="logo">
+                <img src="RED.png" alt="Quikparts Logo" />
+            </a>
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="call-mechanic.html" class="active">Call a Mechanic</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="login.html">Sign Up</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <div class="container">
+            <h1>Call a Mechanic</h1>
+            <p>Need immediate assistance? Request a professional mechanic to your location in just a few steps.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="mechanic-form">
+            <h2>Request a Mechanic</h2>
+            <p>Fill out the form below to request a mechanic. Our team will respond promptly to assist you.</p>
+            <form id="mechanicRequestForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="location">Location</label>
+                <input type="text" id="location" name="location" placeholder="Enter your current location" required>
+
+                <label for="vehicle">Vehicle Details</label>
+                <input type="text" id="vehicle" name="vehicle" placeholder="Enter your vehicle make and model" required>
+
+                <label for="issue">Describe the Issue</label>
+                <textarea id="issue" name="issue" placeholder="Briefly describe the problem" rows="4" required></textarea>
+
+                <label for="photo">Upload Photos (Optional)</label>
+                <input type="file" id="photo" name="photo" accept="image/*" multiple>
+
+                <button type="submit">Request Mechanic</button>
+            </form>
+        </section>
+
+        <section class="mechanic-info">
+            <h2>Why Choose Us?</h2>
+            <ul>
+                <li>Certified and experienced mechanics</li>
+                <li>Quick response times</li>
+                <li>Affordable and transparent pricing</li>
+                <li>Available 24/7 for emergencies</li>
+                <li>On-site repairs and diagnostics</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Quikparts Automotive. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
